@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Login Page</title>
+<title>Insert title here</title>
 </head>
 <style>
 div.ex{
@@ -17,9 +17,9 @@ div.ex{
 </style>
 
 <body>
-	<h1>Login Form</h1>
+	<h1>Registration Form</h1>
 	<div class="ex">
-		<form action="/helloMVC/doLogin" method="post">
+		<form action="/helloMVC/doRegister" method="post">
 			<table cellpadding="5">
 				<tr>
 					<td>아이디</td>
@@ -28,6 +28,19 @@ div.ex{
 				<tr>
 					<td>비밀번호</td>
 					<td><input type="password" name = "password"/></td>
+				</tr>
+				<tr>
+					<td>이름</td>
+					<td><input type="text" name = "name"/></td>
+				</tr>
+				<tr>
+					<td>성별</td>
+					<td><input type="radio" name = "gender" value = "male" checked> 남자  
+					<input type="radio" name = "gender" value = "female" > 여자</td>
+				</tr>
+				<tr>
+					<td>이메일</td>
+					<td><input type="text" name = "email"/></td>		
 				</tr>
 				<tr>
 					<td></td>
