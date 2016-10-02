@@ -1,5 +1,6 @@
 package service;
 
+import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -27,11 +28,10 @@ public class CustomerService {
 	
 	public Customer login(String id, String password){
 		Customer temp = customers.get(id);
-		if(password == temp.getPassword()){
-			return(customers.get(id.toLowerCase()));
+		if(password.equals(temp.getPassword())){
+			return temp;
 		}		
 		else{
-			System.out.println("!!"+password + temp.getPassword()+">");
 			return null;
 		}
 	}
